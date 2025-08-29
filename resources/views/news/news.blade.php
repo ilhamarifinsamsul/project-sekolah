@@ -14,7 +14,7 @@
         <p class="card-text">{{ Str::limit($item->content, 30) }}</p>
       </div>
       <div class="card-footer">
-        <a href="{{ route('news.show', $item->id) }}" class="btn btn-success btn-sm">Baca Selengkapnya</a>
+        <a href="{{ route('news.show', $item->id) }}" class="btn btn-primary btn-sm">Baca Selengkapnya</a>
       </div>
     </div>
   </div>

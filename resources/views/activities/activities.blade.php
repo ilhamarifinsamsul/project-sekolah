@@ -14,7 +14,7 @@
         <p class="card-text">{{ Str::limit($item->description, 20) }}</p>
       </div>
       <div class="card-footer">
-        <a href="{{ route('activities.show', $item->id) }}" class="btn btn-primary btn-sm">Lihat Detail</a>
+        <a href="{{ route('activities.show', $item->id) }}" class="btn btn-success btn-sm">Lihat Detail</a>
       </div>
     </div>
   </div>

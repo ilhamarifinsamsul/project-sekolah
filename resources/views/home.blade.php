@@ -17,7 +17,7 @@
         <p class="card-text text-truncate" style="max-height: 4.5em; overflow: hidden;">
           {{ $item->content }}
         </p>
-        <a href="{{ url('/news') }}" class="btn btn-sm btn-primary">Baca Selengkapnya</a>
+        <a href="{{ route('news.show', $item->id) }}" class="btn btn-sm btn-primary">Baca Selengkapnya</a>
       </div>
     </div>
   @endforeach
@@ -34,7 +34,7 @@
         <p class="card-text text-truncate" style="max-height: 4.5em; overflow: hidden;">
           {{ $item->description }}
         </p>
-        <a href="{{ url('/activities') }}" class="btn btn-sm btn-success">Lihat Detail</a>
+        <a href="{{ route('activities.show', $item->id) }}" class="btn btn-sm btn-success">Lihat Detail</a>
       </div>
     </div>
   @endforeach
